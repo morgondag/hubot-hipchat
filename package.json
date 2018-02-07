@@ -4,7 +4,7 @@
   "author": "HipChat <support@hipchat.com>",
   "description": "A HipChat adapter for Hubot",
   "scripts": {
-    "compile": "node node_modules/coffeescript/bin/coffee -b  -o src -c src/*.coffee"
+    "compile": "node node_modules/coffeescript/bin/coffee -b -o src -c src/*.coffee"
   },
   "keywords": [
     "hipchat",

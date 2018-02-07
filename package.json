@@ -3,6 +3,9 @@
   "version": "2.13.0",
   "author": "HipChat <support@hipchat.com>",
   "description": "A HipChat adapter for Hubot",
+  "scripts": {
+    "compile": "node node_modules/coffeescript/bin/coffee -b  -o build -c src/*.coffee"
+  },
   "keywords": [
     "hipchat",
     "hubot",
@@ -15,7 +18,7 @@
     "url": "http://github.com/morgondag/hubot-hipchat.git"
   },
   "license": "MIT",
-  "main": "./src/hipchat",
+  "main": "./build/hipchat",
   "engines": {
     "node": "~0.12.2"
   },
@@ -23,5 +26,9 @@
     "node-xmpp-client": "^3.2.0",
     "rsvp": "~1.2.0",
     "underscore": "~1.4.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "coffeescript": "^1.12.7"
   }
 }

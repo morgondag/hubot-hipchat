@@ -4,7 +4,7 @@
   "author": "HipChat <support@hipchat.com>",
   "description": "A HipChat adapter for Hubot",
   "scripts": {
-    "compile": "node node_modules/coffeescript/bin/coffee -b  -o build -c src/*.coffee"
+    "compile": "node node_modules/coffeescript/bin/coffee -b  -o src -c src/*.coffee"
   },
   "keywords": [
     "hipchat",
@@ -18,7 +18,7 @@
     "url": "http://github.com/morgondag/hubot-hipchat.git"
   },
   "license": "MIT",
-  "main": "./build/hipchat",
+  "main": "./src/hipchat",
   "engines": {
     "node": "~0.12.2"
   },
@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "coffeescript": "^1.12.7"
+    "coffeescript": "1.12.7"
   }
 }
